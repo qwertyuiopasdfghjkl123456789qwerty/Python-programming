@@ -6,8 +6,10 @@ class Circle:
 
     def get_result(self):
         return self.radius
+    
     def area(self):
         return math.pi * self.radius ** 2
+    
     def __add__(self, another_circle):
         return Circle(self.radius + another_circle.radius)
 
